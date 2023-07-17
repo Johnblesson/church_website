@@ -1,10 +1,12 @@
 ul[data-bsp-ul-index] {
           padding:0 0 0 0;
           margin:0 0 40px 0;
+          list-style: none;
  }
 ul[data-bsp-ul-index] li {
           list-style:none;
           margin-bottom:10px;
+          list-style: none;
 } 
 
 #bsPhotoGalleryModal .modal-content {
@@ -123,6 +125,140 @@ a.bsp-controls:hover {
   background-size: cover !important;
 }
 
+.main-navigation a {
+  text-decoration: none;
+}
+
+.main-navigation ul {
+  list-style: none;
+}
+
+/* Menu*/
+header {
+  display: block;
+}
+
+/*
+ * Header Styles
+ */
+ .site-header {
+  position: relative;
+  z-index: 999;
+  background: white;
+  text-align: center;
+  padding: 50px 0 30px; }
+
+.branding {
+  text-align: center; }
+  .branding .logo {
+    margin-bottom: 10px; }
+  .branding .site-title {
+    color: #8f7655;
+    font-size: 14px;
+    font-size: 1em; }
+
+.main-navigation {
+  border-top: 1px solid #e5e5e5; }
+  .main-navigation .menu-toggle {
+    border: none;
+    background: none;
+    padding: 20px;
+    display: none;
+    font-family: "Novecento Sans", "Raleway", "Noto Sans" "Open Sans", sans-serif;
+    text-transform: uppercase;
+    outline: none; }
+    @media screen and (max-width: 990px) {
+      .main-navigation .menu-toggle {
+        display: inline-block; } }
+  .main-navigation .menu {
+    list-style: none; }
+    @media screen and (max-width: 990px) {
+      .main-navigation .menu {
+        display: none; } }
+    .main-navigation .menu .menu-item {
+      display: inline-block;
+      margin: 0 10px; }
+      .main-navigation .menu .menu-item a {
+        display: block;
+        padding: 20px 0;
+        text-transform: uppercase;
+        font-family: "Novecento Sans", "Raleway", "Noto Sans" "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        font-size: 1.2857142857em;
+        border-bottom: 1px solid #e5e5e5;
+        -webkit-transition: .3s ease;
+                transition: .3s ease; }
+        .main-navigation .menu .menu-item a small {
+          display: block;
+          color: #a59e95;
+          font-weight: 300;
+          font-size: 10px;
+          font-size: 0.7142857143rem; }
+      .main-navigation .menu .menu-item.current-menu-item a, .main-navigation .menu .menu-item:hover a {
+        border-bottom-color: #8f7655;
+        border-width: 2px; }
+
+.mobile-navigation {
+  padding: 30px 0;
+  display: none; }
+  @media screen and (min-width: 991px) {
+    .mobile-navigation {
+      display: none !important; } }
+  .mobile-navigation .menu {
+    list-style: none; }
+    .mobile-navigation .menu .menu-item {
+      border-bottom: 1px solid #e5e5e5; }
+      .mobile-navigation .menu .menu-item:first-child {
+        border-top: 1px solid #e5e5e5; }
+    .mobile-navigation .menu a {
+      font-family: "Novecento Sans", "Raleway", "Noto Sans" "Open Sans", sans-serif;
+      text-transform: uppercase;
+      font-weight: 400;
+      display: block;
+      padding: 10px 20px; }
+      .mobile-navigation .menu a small {
+        display: block;
+        color: #a59e95; }
+
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  *zoom: 1; }
+  .container:after {
+    content: " ";
+    clear: both;
+    display: block;
+    overflow: hidden;
+    height: 0; }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px; } }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px; } }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px; } }
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  *zoom: 1; }
+  .container-fluid:after {
+    content: " ";
+    clear: both;
+    display: block;
+    overflow: hidden;
+    height: 0; }
+
+
+/*Media Quaries*/
 @media (min-width: 992px){
   #bsPhotoGalleryModal .modal-lg {
       max-width: 1000px;
@@ -135,6 +271,41 @@ a.bsp-controls:hover {
   }
 }
 
-a {
-  text-decoration: none;
+/**Mobile View**/
+@media only screen and (max-width: 768px) {
+  .site-header {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .site-title {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  
+  .branding img {
+    width: 40px;
+  }
+  
+  .menu-toggle {
+    display: block;
+  }
+  
+  .menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-item {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .menu-item a {
+    display: block;
+  }
 }
+
+  

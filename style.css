@@ -1215,6 +1215,7 @@ form input[type="submit"], form button, form input[type="reset"] {
         display: block;
         color: #a59e95; }
 
+    /* Slide */
 .hero {
   position: relative; }
   .hero .slides {
@@ -1239,16 +1240,17 @@ form input[type="submit"], form button, form input[type="reset"] {
       text-transform: uppercase;
       color: white; }
     .hero .slides .slide-subtitle {
-      font-size: 30px;
+      font-size: 30;
       font-size: 2.1428571429em;
       font-weight: 700;
       margin-bottom: 30px;
       display: block; }
+
     .hero .slides .slide-title {
-      font-size: 60px;
-      font-size: 4.2857142857em;
+      /*font-size: px;*/
       font-weight: 100;
       margin-bottom: 50px; }
+      
     .hero .slides .button, .hero .slides form input[type="submit"], form .hero .slides input[type="submit"], .hero .slides form button, form .hero .slides button, .hero .slides form input[type="reset"], form .hero .slides input[type="reset"] {
       position: relative;
       height: 50px;
@@ -1517,3 +1519,124 @@ ul.bullet {
   box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.2); }
 .contact-form textarea {
   min-height: 150px; }
+
+  /* Pastor's Profile*/
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .main_container {
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .profile_container {
+    height: 500px;
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 15px; /* Add this line */
+    padding-bottom: 50px; /* Add this line */
+  }
+  
+  .background_img {
+    height: 350px;
+    width: 100%;
+    transform: scale(0.9);
+    border-radius: 10px;
+    border: #000 1px solid;
+    position: relative;
+    margin-bottom: 15px; /* Add this line */
+  }
+  
+  .user_img {
+    height: 170px;
+    width: 170px;
+    border-radius: 100px;
+    border: 3px solid white;
+    margin-top: -250px;
+    z-index: 123;
+    margin-bottom: 25px;
+  }
+  
+  .card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    margin: 55px;
+    height: 100%;
+    width: 90%;
+    align-items:center;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .profile_container h1 {
+    background: none;
+    color: #333333;
+    font-size: 17px;
+    text-align: justify;
+    position: relative; /* Change this line */
+    top: 15px; /* Change this line */
+    margin-bottom: 10px; /* Add this line */
+  }
+  
+  .profile_container p {
+    background: none;
+    text-align: center;
+    transform: scale(0.9);
+    font-size: 16px;
+    color: #383838;
+    margin: 50px;
+  }
+
+  .profile_container h1:hover{
+    color: #0F7CC3;
+  }
+  
+  /* Mobile View */
+  @media only screen and (max-width: 480px) {
+    .background_img {
+      height: 250px;
+      transform: scale(0.7);
+    }
+    
+    .user_img {
+      height: 130px;
+      width: 130px;
+      margin-top: -180px;
+      margin-bottom: 30px;
+    }
+    
+    .profile_container h1 {
+      font-size: 14px;
+    }
+    
+    .profile_container p {
+      font-size: 14px;
+      margin: 10px;
+    }
+  }
+  
+  /* Tablet View */
+  @media only screen and (max-width: 768px) {
+    .profile_container h1 {
+      font-size: 16px;
+      margin-bottom: 5px; /* Add this line */
+    }
+    
+    .profile_container p {
+      font-size: 15px;
+      margin: 10px;
+    }
+  }
+  
